@@ -2,6 +2,7 @@ const data = [
   {
     id: 'a',
     src: '/images/vincent-van-zalinge-bird.jpg',
+    srcSet: '/images/vincent-van-zalinge-bird.jpg 1x, /images/vincent-van-zalinge-bird@2x.jpg 2x, /images/vincent-van-zalinge-bird@3x.jpg 3x',
     alt: 'A tiny shrewd turquoise-and-amber bird',
     tags: [
       'bird',
