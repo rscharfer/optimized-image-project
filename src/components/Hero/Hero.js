@@ -18,10 +18,11 @@ const Hero = () => {
       </source>
       <HeroImage 
         src="/images/hero-img.jpg"
+        alt="beige cat with light blue eyes staring back at you intently"
         
       />
     </picture>
-      <Swoop src="/swoop.svg" />
+      <Swoop src="/swoop.svg" alt='' />
     </Wrapper>
   );
 };

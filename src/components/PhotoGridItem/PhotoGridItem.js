@@ -22,7 +22,7 @@ const PhotoGridItem = ({ id, src, alt, tags }) => {
         <source type='image/jpg' srcSet={makeSourceSet(src)}>
 
         </source>
-          <Image src={src}/>
+          <Image src={src} alt={alt}/>
         </picture>
       </Anchor>
       <Tags>
@@ -52,12 +52,31 @@ const Image = styled.img`
 `;
 
 const Tags = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 4px 0;
+${'' /*   display: flex;
   gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */}
+${'' /*   overflow: hidden;
+  white-space: nowrap; */}
+  
+${'' /*   display: flex;
+  flex-wrap: wrap;
+  gap: 8px; */}
 `;
 
 const Tag = styled.li`
+${'' /*   display: inline-block; */}
+  
+${'' /*   text-overflow: ellipsis; */}
+&:not(:last-of-type){
+  margin-right: 8px;
+}
+  display: inline;
   padding: 4px 8px;
   background: var(--color-gray-300);
   font-size: 0.875rem;
